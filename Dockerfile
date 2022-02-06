@@ -26,7 +26,7 @@ USER jovyan
 
 # RUN conda install -y scikit-learn
 
-RUN pip install --no-cache-dir sqlite3
+# RUN pip install --no-cache-dir 
 
 # Override command to disable running jupyter notebook at launch
 # CMD ["/bin/bash"]
