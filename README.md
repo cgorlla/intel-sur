@@ -17,6 +17,7 @@ This Python file contains the necessary code to parse and clean data from the In
 
 ### Building `run.py`
 To run: `python run.py {data} {analysis} {model}`
+
 To test: `python run.py test` This will load in test data in `test\testdata` and build the HMM prediction model off of it. The predictions of the test model will be stored in `data\out\`.
 
 ## `src\model\model.py`
