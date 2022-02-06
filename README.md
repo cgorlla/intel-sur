@@ -25,4 +25,4 @@ This file contains the first order Hidden Markov model class that will be used f
 
 
 ## Docker
-A dockerfile is included and will create a Docker environment that allows for the succesful execution of all code in this repository.
+A dockerfile is included and will create a Docker environment that allows for the successful execution of all code in this repository.
