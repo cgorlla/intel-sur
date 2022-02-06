@@ -1,0 +1,4 @@
+{
+    "test_size": .20,
+    "outpath": "data/out/output.txt"
+}
