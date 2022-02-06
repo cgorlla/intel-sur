@@ -20,7 +20,8 @@ To run: `python run.py {data} {analysis} {model}`
 
 To just build the model: `python run.py data model`
 
-To test: `python run.py test` This will load in test data in `test\testdata` and build the HMM prediction model off of it. The predictions of the test model will be stored in `data\out\`.
+To test: `python run.py test` 
+This will load in test data in `test\testdata` and build the HMM prediction model off of it. The predictions of the test model will be stored in `data\out\`.
 
 ## `src\model\model.py`
 This file contains the first order Hidden Markov model class that will be used for predicting future foreground applications. After splitting the data and fitting the training set to a `first_order_HMM` instance using `fit`, the model keeps track of the prior and posterior probabilities of the training set's foreground applications. When inputting an observation, `X`, to `predict`, the function returns a list of foregrounds, (of size `n_foregrounds`, with default value of 1) with the highest conditional probability given `X`'s inputted foreground application and the trained model's posterior probabilities. `accuracy` returns the accuracy of the `y_test` on `y_pred` by taking each true foreground application in `y_test` and checking whether or not it appears in its respective list of foregrounds in `y_pred`.
