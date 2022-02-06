@@ -4,7 +4,7 @@ This repository contains the code for our research at UCSD on predicting PC user
 
 You can read about the development of the Input Libraries that collected the data used to predict in the paper below.
 
-Cyril Gorlla, Jared Thach, Hiroki Hoshida. Development of Input Libraries With Intel XLSDK to Capture Data for App Start Prediction. 2022. ⟨[hal-03527679](https://hal.archives-ouvertes.fr/hal-03527679)⟩
+Cyril Gorlla, Jared Thach, Hiroki Hoshida. Development of Input Libraries With Intel XLSDK to Capture Data for App Start Prediction. 2022. ⟨[hal-03527679](https://hal.archives-ouvertes.fr/hal-03527679)⟩{:target="_blank"}
 
 ## Repository Overview
 - `config\`: contains configuration files for various scripts, such as data and output locations
