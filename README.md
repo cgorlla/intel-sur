@@ -29,7 +29,7 @@ To just build the model: `python run.py data model`
 
 To test: `python run.py test` 
 
-This will load in test data in `test\testdata` and build the HMM and LSTM prediction models off of it. The predictions of the test model will be stored in `data\out\test_model.txt`, which you may verify against the files name `true_test_model.txt`.
+This will load in test data in `test\testdata` and build the HMM and LSTM prediction models off of it. The predictions of the test model will be stored in `data\out\test_{model}.csv`, which you may verify against the files name `true_test_{model}.csv` to ensure the model is functioning as expected.
 
 ## `src\model\model.py`
 
