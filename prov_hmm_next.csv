@@ -1,3 +1,0 @@
-X,y_pred
-explorer.exe,"['chrome.exe', 'cmd.exe', 'explorer.exe']"
-chrome.exe,"['cmd.exe', 'chrome.exe', 'explorer.exe']"
