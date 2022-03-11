@@ -171,7 +171,7 @@ def build_lstm_duration(string_df, test_size, outpath, test):
     
     df_0['MEASUREMENT_TIME_HR'] = pd.to_datetime(string_df['MEASUREMENT_TIME']).dt.hour
     df_0['MEASUREMENT_TIME'] = (string_df['MEASUREMENT_TIME'])
-    df_0['VALUE'] = string_df['VALUE']
+    df_0['VALUE'] = string_df[string_df['ID_INPUT'] == 3].drop(['ID_INPUT', 'PRIVATE_DATA'], axis=1).reset_index(drop=True)['VALUE']
     
     print('Splitting data...')
     
