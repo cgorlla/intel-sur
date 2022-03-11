@@ -2,7 +2,7 @@
 # generally use the most recent tag
 
 # base notebook, contains Jupyter and relevant tools
-ARG BASE_CONTAINER=ucsdets/datahub-base-notebook:2021.2-stable
+ARG BASE_CONTAINER=ucsdets/scipy-ml-notebook:2022.1-fb78be0
 
 # data science notebook
 # https://hub.docker.com/repository/docker/ucsdets/datascience-notebook/tags

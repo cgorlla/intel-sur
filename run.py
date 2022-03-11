@@ -40,12 +40,12 @@ def main(targets):
             model_cfg = json.load(fh)
 
         # make the data target
-        build(string_df, **model_cfg)
+        build(string_df, False, **model_cfg)
         
     if 'test' in targets:
         data = get_all_databases('test/testdata')
         string_df = data[0]
-        build(string_df, .20, 'data/out/test.txt')
+        build(string_df, True, .20, 'data/out/')
     return
 
 
