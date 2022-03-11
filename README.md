@@ -35,13 +35,13 @@ This will load in test data in `test\testdata` and build the HMM and LSTM predic
 
 This file contains the:
 
-- first order Hidden Markov model class that will be used for predicting future foreground applications. After splitting the data and fitting the training set to a `first_order_HMM` instance using `fit`, the model keeps track of the prior and posterior probabilities of the training set's foreground applications. When inputting an observation, `X`, to `predict`, the function returns a list of foregrounds, (of size `n_foregrounds`, with default value of 1) with the highest conditional probability given `X`'s inputted foreground application and the trained model's posterior probabilities. `accuracy` returns the accuracy of the `y_test` on `y_pred` by taking each true foreground application in `y_test` and checking whether or not it appears in its respective list of foregrounds in `y_pred`.
+- First order Hidden Markov model classfor predicting future foreground applications. After splitting the data and fitting the training set to a `first_order_HMM` instance using `fit`, the model keeps track of the prior and posterior probabilities of the training set's foreground applications. When inputting an observation, `X`, to `predict`, the function returns a list of foregrounds, (of size `n_foregrounds`, with default value of 1) with the highest conditional probability given `X`'s inputted foreground application and the trained model's posterior probabilities. `accuracy` returns the accuracy of the `y_test` on `y_pred` by taking each true foreground application in `y_test` and checking whether or not it appears in its respective list of foregrounds in `y_pred`.
 
-- The next-app prediction LSTM model used a “look-back” value of one previous foreground application in order to predict one future foreground application, where a “look-back” is defined as the number of previous events a single input will use in order to generate the next output
+- The next-app prediction LSTM model using a “look-back” value of one previous foreground application in order to predict one future foreground application, where a “look-back” is defined as the number of previous events a single input will use in order to generate the next output
 
-- The duration prediction LSTM used a look-back value of five. In other words, the model uses the previous five data points to predict the next. 
+- The duration prediction LSTM using a look-back value of five. In other words, the model uses the previous five data points to predict the next. 
 
-Both LSTMs' model architecture is similar, with the four layers in the same order. 
+Both LSTM models' architecture is similar, with the four layers in the same order. 
 
 
 
