@@ -1,6 +1,8 @@
 # INTELli*next*: A Fully Integrated LSTM and HMM-Based Solution for Next-App Prediction With Intel SUR SDK Data Collection
 # Intel DCA x HDSI UCSD System Usage Reporting Research
 
+Cyril Gorlla, Jared Thach, Hiroki Hoshida. [INTELli*next*: A Fully Integrated LSTM and HMM-Based Solution for Next-App Prediction With Intel SUR SDK Data Collection. *Halıcıoğlu Data Science Institute Capstone Showcase, March 11, 2022*](https://github.com/cgorlla/intel-capstone-submission/blob/main/report.pdf)
+
 As the power of modern computing devices increases, so too do user expectations for them. Despite advancements in technology, computer users are often faced with the dreaded spinning icon waiting for an application to load. Building upon our previous work developing data collectors with the Intel System Usage Reporting (SUR) SDK, we introduce INTELli*next*, a comprehensive solution for next-app prediction for application preload to improve perceived system fluidity. We develop a Hidden Markov Model (HMM) for prediction of the k most likely next apps, achieving an accuracy of 70% when k = 3. We then implement a long short-term memory (LSTM) model to predict the total duration that applications will be used. After hyperparameter optimization leading to an optimal lookback value of 5 previous applications, we are able to predict the usage time of a given application with a mean absolute error of ~45 seconds. Our work constitutes a promising comprehensive application preload solution with data collection based on the Intel SUR SDK and prediction with machine learning.
 
 
